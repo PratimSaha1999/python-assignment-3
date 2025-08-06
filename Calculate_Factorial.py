@@ -1,0 +1,18 @@
+# Step 1: Define the factorial function using a loop
+def factorial(n):
+    if n < 0:
+        return "Factorial does not exist for negative numbers"
+    elif n == 0:
+        return 1
+    else:
+        result = 1
+        for i in range(1, n + 1):
+            result *= i
+        return result
+
+# Step 2: Call the function and print the result
+num = int(input("Enter a number to calculate its factorial: "))
+fact = factorial(num)
+print(f"The factorial of {num} is: {fact}")
+# Step 3: Test the function with different inputs
+# Test with a positive integer
